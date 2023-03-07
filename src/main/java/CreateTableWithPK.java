@@ -3,7 +3,7 @@ import Util.ConnectionUtil;
 import Util.FileUtil;
 
 import java.sql.Connection;
-import java.sql.PreparedStatement;
+
 import java.sql.SQLException;
 import java.sql.Statement;
 
@@ -58,6 +58,7 @@ public class CreateTableWithPK {
          * NOTE: The "id" column is what we are going to define as the primary key.
          */
         String sql = FileUtil.parseSQLFile("problem1.sql");
+        
 
         try {
             Connection connection = ConnectionUtil.getConnection();
